@@ -1,0 +1,29 @@
+{
+  "name": "nextjs-dark-mode-flash",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "build:theme:webpack": "webpack --config webpack.theme.js",
+    "inject-theme": "npm run build:theme:webpack && node .theme/build/index.js --build-script-file && node .theme/build/index.js --edit-document"
+  },
+  "dependencies": {
+    "next": "9.3.6",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.5",
+    "@types/react": "^16.9.34",
+    "@types/uglify-js": "^3.9.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "ts-loader": "^7.0.3",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "typescript": "^3.8.3",
+    "uglify-js": "^3.9.2",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
