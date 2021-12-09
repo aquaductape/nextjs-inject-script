@@ -10,7 +10,7 @@
     "inject-theme": "npm run build:theme:webpack && node .theme/build/index.js --build-script-file && node .theme/build/index.js --edit-document"
   },
   "dependencies": {
-    "next": "9.3.6",
+    "next": "11.1.3",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
